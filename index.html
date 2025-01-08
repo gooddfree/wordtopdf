@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Office to PDF Converter</h1>
+    </header>
+    <main>
+        <div class="converter">
+            <h2>Convert Your Files</h2>
+            <form id="uploadForm" enctype="multipart/form-data">
+                <label for="fileInput">Upload your file:</label>
+                <input type="file" id="fileInput" name="file" accept=".doc,.docx,.pdf,.ppt,.pptx,.xls,.xlsx" required>
+                
+                <label for="formatSelect">Choose output format:</label>
+                <select id="formatSelect" name="format" required>
+                    <option value="pdf">Convert to PDF</option>
+                    <option value="docx">Convert to DOCX</option>
+                </select>
+
+                <button type="submit">Convert</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 File Converter Inc.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
